@@ -1,0 +1,10 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+dependencies {
+    implementation project(":annotation")
+    implementation(libs.kotlinpoet) // KotlinPoet library
+    implementation 'com.squareup:kotlinpoet-ksp:2.0.0'
+    implementation(libs.symbol.processing.api)
+}
